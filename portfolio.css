@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.port {
+  text-align: center;
+}
+.portfolio {
+  background-color: rgb(250, 243, 243);
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 70px;
+  /* padding-bottom: 10px; */
+  /* height: 100vh; */
+}
+.font {
+  font-family: "Courier New", Courier, monospace;
+  /* background-color: red; */
+}
+.img {
+  border-radius: 20px;
+  /* background-color: red; */
+  /* width: 500px; */
+  width: 300px;
+  height: 300px;
+  /* margin-left: 50px; */
+  /* display: block; */
+  margin-top: 30px;
+  /* overflow: hidden; */
+}
+.links {
+  color: black;
+  /* display: nonem; */
+  /* transform: translate(20px 0px); */
+  /* transform: translate(-50px, -150px); */
+  margin-left: 50px;
+  /* background-color: blue; */
+}
+.capture {
+  line-height: 20px;
+  /* padding-bottom: 20px; */
+  /* margin-top: 20px; */
+  padding: 0px 20px 0px 20px;
+  /* display: none; */
+  width: 300px;
+  margin: 20px auto;
+  /* background-color: red; */
+  /* overflow: hidden; */
+}
+.links:hover {
+  border: none;
+  border-bottom: 0px;
+  text-decoration: underline;
+
+  /* display: none; */
+}
+.link:hover {
+  border-bottom: 0px;
+}
+/* .link:visited {
+    color: red;
+    } */
+#studio,
+#cart,
+.tablet {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+}
+.img img {
+  /* width: 100%; */
+  /* margin-left: 0px; */
+  /* padding-left: 0px; */
+
+  /* height: 100%; */
+  /* object-fit: 100%; */
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
+  border-radius: 20px;
+}
+.img:hover img {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+.project {
+  /* background-color: white; */
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  /* display: none; */
+  gap: 20px;
+}
+
+.loop {
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+
+  /* display: none; */
+}
+.perf {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 520px) {
+  .portfolio {
+    /* background-color: brown; */
+    width: 90%;
+  }
+  .tablet {
+    display: none;
+  }
+  #studio {
+    padding-bottom: 30px;
+  }
+  .perf {
+    display: block;
+    margin-left: 20px;
+  }
+  .loop {
+    margin-left: -20px;
+    /* padding-bottom: 20px; */
+    border-radius: 20px;
+  }
+
+  .port {
+    /* background-color: red; */
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .project {
+    flex-direction: column;
+
+    gap: 100px;
+  }
+
+  .links {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .capture {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .loop,
+  .perf {
+    width: 80%;
+    /* object-fit: contain; */
+    /* margin-left: 50px; */
+    /* background-color: red; */
+  }
+  .portfolio p {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 521px) and (max-width: 1020px) {
+  .portfolio {
+    /* background-color: brown; */
+    width: 90%;
+  }
+  .port {
+    /* background-color: red; */
+    /* font-size: 50px; */
+    margin-bottom: 50px;
+  }
+  .project {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .links {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .capture {
+    width: 100%;
+  }
+  .divs {
+    width: 100%;
+  }
+  .img {
+    width: 90%;
+    margin-left: -20px;
+  }
+  .links {
+    font-size: 30px;
+    margin-left: 50px;
+    /* display: none; */
+  }
+  .capture {
+    margin-top: 80px;
+  }
+  .perf {
+    display: none;
+    width: 100%;
+  }
+  .tablet {
+    width: 100%;
+    margin-left: 10%;
+    height: 100%;
+    display: flex;
+  }
+  .loop,
+  .perf {
+    height: 80%;
+    width: 100%;
+    /* background-color: red; */
+    /* object-fit: contain; */
+    /* margin-left: -50px; */
+    /* background-color: red; */
+  }
+  .portfolio p {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}

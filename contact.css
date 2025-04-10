@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contacts {
+  width: 70%;
+  background-color: gainsboro;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+.form{
+  display: flex;
+  gap: 20px;
+}
+#names {
+  text-transform: uppercase;
+  /* background-color: red; */
+  display: block;
+  font-size: 15px;
+  margin-top: 20px;
+}
+input {
+  width: 100%;
+  
+  height: 5vh;
+  border: none;
+  /* border-radius: 20px; */
+  padding: 10px;
+  text-transform: uppercase;
+  /* background-color: gainsboro; */
+  background-color: white;
+}
+.github{
+  /* text-decoration: underline; */
+  margin-left: 0px;
+  font-size: 15px;
+  /* display: flex;
+  gap: 10px;
+  align-items: center; */
+}
+.touch{
+  margin-top: 20px;
+}
+.github:hover{
+  border-bottom: 0px;
+}
+#email {
+  text-transform: lowercase;
+}
+textarea {
+  width: 100%;
+  background-color: #fff;
+  /* background-color: gainsboro; */
+  /* border: 5px groove black; */
+  border: none;
+  height: 15vh;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+form {
+  /* background-color: red; */
+  /* width: 35rem; */
+  padding: 10px;
+  margin: 0 auto;
+}
+#named{
+  width: 49%;
+}
+button {
+  padding: 20px;
+  width: 30rem;
+  border-radius: 40px;
+  border: 5px groove black;
+  font-size: 20px;
+  margin-top: 40px;
+  background-color: gainsboro;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  animation: edit 3s ease forwards;
+  font-family: cursive;
+}
+@keyframes edit {
+  from{
+    background-color: gainsboro;
+    color: black;
+    font-family: sans-serif;
+  }
+  to{
+    background-color: black;
+    color: white;
+    font-family: cursive;
+  }
+}
+.back {
+  color: black;
+  text-align: center;
+  border: none;
+  border-bottom: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    /* background-color: red; */
+    /* display: none; */
+    width: 0px;
+}
+.next {
+  /* background-color: #fff; */
+  padding: 20px;
+  /* border: 10px solid red; */
+  border: 5px solid white;
+
+  border-radius: 100%;
+  transform: rotate(270deg);
+}
+.next:hover{
+  animation: color 3s ease-in-out forwards;
+  /* background-color: #fff; */
+}
+@keyframes color {
+  from{
+    background-color: gainsboro;
+    bottom: 0;
+  }
+  to{
+    background-color: white;
+    top: 100%;
+  }
+  
+}
+.app{
+  width: 30px;
+  /* background-color: white; */
+  transform: translate(0px,10px);
+  margin: 5px;
+}
+.apps{
+  width: 40px;
+  height: 40px;
+  /* background-color: red; */
+  /* margin-top: 10px; */
+  /* object-fit: contain; */
+  /* transform: scale(1.3); */
+  transform: translate(0px,15px);
+  padding: 0px;
+  border-radius: 100%;
+  /* margin-top: -5px; */
+  /* flex-direction: row; */
+  /* display: flex; */
+}
+li{
+  margin-left: 10px;
+}
+h2{
+  text-transform: uppercase;
+}
+ .contacts .my{
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  border-bottom: 2px solid ;
+}
+.service .my{
+  /* background-color: rebeccapurple; */
+  margin-bottom:  20px;
+}
+@media screen and (min-width:300px) and (max-width:520px) {
+  .contacts{
+    width: 90%;
+    flex-direction: column;
+  }
+  .contacts .my{
+    margin-bottom: 20px;
+    /* background-color: red; */
+    padding-bottom: 20px;
+  }
+  .form{
+    flex-direction: column;
+  }
+  form{
+    width: 100%;
+  }
+  button{
+    width: 100%;
+  }
+}
+@media screen and (min-width:521px) and (max-width:1020px) {
+  .contacts{
+    width: 90%;
+    flex-direction: column;
+  }
+  .contacts .my{
+    margin-bottom: 20px;
+    /* background-color: red; */
+    padding-bottom: 20px;
+  }
+  .form{
+    font-size: 20px;
+    padding: 10px;
+    flex-direction: column;
+  }
+  #font {
+    font-size: 20px;
+    color: blueviolet;
+  }
+  form ::placeholder{
+    font-size: 15px;
+  }
+  form{
+    width: 100%;
+    
+  }
+  input{
+    font-size: 15px;
+  }
+  button{
+    width: 100%;
+  }
+}
